@@ -1,0 +1,19 @@
+# Prevent accidental commits of local secrets and sensitive runtime artifacts.
+# This affects untracked files only; tracked files and history remain visible.
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+secrets.local.json
+credentials.local.json
+service-account.local.json
+id_rsa
+id_ed25519
+id_ecdsa
+id_dsa
+*.log
+.vs/
+__pycache__/
+*.pyc
+
